@@ -1,0 +1,19 @@
+.main-header>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.work {
+    float: left;
+}
+.our-work>.container {
+    overflow: hidden;
+}
+
+.grid-item {
+    width: 260px;
+    border: 2px solid transparent;
+}
+.grid-item--width2 {
+    width: 520px;
+}
