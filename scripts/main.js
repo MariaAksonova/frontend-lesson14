@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.our-work .container').masonry({
+    $('.our-work .wrapper').masonry({
         itemSelector: '.grid-item',
         columnWidth: 260,
         singleMode: false,

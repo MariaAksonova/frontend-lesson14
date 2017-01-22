@@ -1,13 +1,16 @@
+@import "variables";
+@import "fonts";
+@import "slider";
+@import "button";
+
+body {
+  background-color: $bg-color;
+}
+
 .main-header>.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.work {
-    float: left;
-}
-.our-work>.container {
-    overflow: hidden;
 }
 
 .grid-item {
@@ -16,4 +19,114 @@
 }
 .grid-item--width2 {
     width: 520px;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+.clients {
+  margin: 0 auto;
+  list-style: none;
+
+  .client {
+    display: inline-block;
+    margin-right: 12px;
+    height: 65px;
+    width: 140px;
+    background: url("../images/clients.png") no-repeat;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@for $i from 0 to 8 {
+
+  $step : -140px;
+
+  .clients {
+
+    > .client:nth-child(#{$i + 1}) {
+
+      background-position: ($step * $i) 0;
+    }
+  }
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 34px;
+
+
+  .space {
+    margin: 0 40px;
+    background-color: transparent;
+
+    h4 {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $yellow-color;
+      background-color: $grey-color;
+      line-height: 21px;
+      width: 168px;
+      height: 31px;
+      padding: 8px 28px;
+    }
+  }
+
+
+  &:before, &:after  {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: $light-grey-color;
+    margin-top: 15px;
+  }
+}
+
+p {
+  font-family: $font-main;
+}
+
+.grey-text {
+  color: $grey-color;
+}
+.white-text {
+  color: #fff;
+  background-color: $grey-color;
+}
+.small-text {
+  font-size: 13px;
+  line-height: 19px;
+}
+.medium-text {
+  font-size: 16px;
+  line-height: 21px;
+}
+.big-text {
+  font-size: 24px;
+  line-height: 33px;
+}
+//slider
+
+//slider
+
+
+.nav-pills .nav-link.active {
+  color: $grey-color;
+  background-color: $yellow-color;
+}
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+.nav-link {
+  display: block;
+  padding: 1.5em .7em;
+  color: $grey-color;
+  font-size: 16px;
+  margin-left: 28px;
 }

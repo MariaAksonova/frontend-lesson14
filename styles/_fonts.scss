@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "CenturyGothic";
+  src: url('../fonts/Century-Gothic.ttf') format('truetype');
+}
+@font-face {
+  font-family: "SourceCodeProLight";
+  src: url('../fonts/SourceCodePro-Light.ttf') format('truetype');
+}
+$font-main: "CenturyGothic", sans-serif;
+$font-code: "SourceCodeProLight", sans-serif;
