@@ -2,16 +2,14 @@
 @import "fonts";
 @import "slider";
 @import "button";
+@import "header";
+@import "first-section";
+@import "footer";
 
 body {
   background-color: $bg-color;
 }
 
-.main-header>.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .grid-item {
     width: 260px;
@@ -97,7 +95,6 @@ p {
 }
 .white-text {
   color: #fff;
-  background-color: $grey-color;
 }
 .small-text {
   font-size: 13px;
@@ -111,22 +108,41 @@ p {
   font-size: 24px;
   line-height: 33px;
 }
-//slider
-
-//slider
 
 
-.nav-pills .nav-link.active {
-  color: $grey-color;
-  background-color: $yellow-color;
+.about-us {
+  text-align: center;
+
+  h3 {
+    font-family: "CenturyGothic", sans-serif;
+    font-size: 35px;
+    line-height: 21px;
+    color: $grey-color;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+  }
 }
-.nav-pills .nav-link {
-  border-radius: 0;
+
+.about-us-list {
+  width: 100%;
+
+  li {
+    list-style: none;
+    height: 270px;
+    width: 20%;
+    display: inline-block;
+    margin: 24px;
+
+    .yellow-section {
+      height: 66%;
+      background-color: $yellow-color;
+    }
+
+    .gray-section {
+      height: 34%;
+      background-color: $grey-color;
+    }
+  }
 }
-.nav-link {
-  display: block;
-  padding: 1.5em .7em;
-  color: $grey-color;
-  font-size: 16px;
-  margin-left: 28px;
-}
+
+

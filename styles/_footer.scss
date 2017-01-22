@@ -1,0 +1,14 @@
+@import "variables";
+@import "fonts";
+
+.main-footer {
+  background-color: $grey-color;
+
+  &>.container {
+    display: flex;
+  }
+}
+
+.footer-nav {
+  background-color: #000;
+}
