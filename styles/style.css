@@ -65,20 +65,18 @@
   justify-content: space-between;
   align-items: center; }
 
-.nav-pills .nav-link.active {
+.main-header .nav-pills .nav-link.active {
   color: #414146;
   background-color: #ffea00; }
-
-.nav-pills .nav-link {
+.main-header .nav-pills .nav-link {
   border-radius: 0; }
-
-.nav-link {
+.main-header .nav-link {
   display: block;
   padding: 1.5em .7em;
   color: #414146;
   font-size: 16px;
   margin-left: 28px; }
-  .nav-link:hover {
+  .main-header .nav-link:hover {
     color: #cacaca; }
 
 @font-face {
@@ -95,12 +93,112 @@
   font-family: "CenturyGothic";
   src: url("../fonts/Century-Gothic.ttf") format("truetype"); }
 .main-footer {
-  background-color: #414146; }
+  background-color: #414146;
+  color: #fff;
+  font-size: 13px;
+  line-height: 21px;
+  padding: 28px 0; }
   .main-footer > .container {
     display: flex; }
+  .main-footer h4 {
+    margin-bottom: 20px; }
+
+.photo-stream {
+  margin-top: 40px; }
+  .photo-stream img {
+    margin-right: 4px;
+    margin-bottom: 8px; }
+
+.tweets {
+  padding-left: 0; }
+  .tweets li {
+    padding-left: 40px;
+    background: url("../images/twitter-birs-icon.png") 0 30% no-repeat; }
+  .tweets p {
+    margin: 0; }
+  .tweets .smaller-text {
+    margin-bottom: 22px; }
+
+.socials {
+  padding: 0;
+  margin: 0; }
+  .socials li {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: url("../images/social.png") no-repeat; }
+
+.socials > .social:nth-child(1) {
+  background-position: 0px 0; }
+
+.socials > .social:nth-child(2) {
+  background-position: -30px 0; }
+
+.socials > .social:nth-child(3) {
+  background-position: -60px 0; }
+
+.socials > .social:nth-child(4) {
+  background-position: -90px 0; }
+
+.socials > .social:nth-child(5) {
+  background-position: -120px 0; }
+
+.socials > .social:nth-child(6) {
+  background-position: -150px 0; }
+
+.socials > .social:nth-child(7) {
+  background-position: -180px 0; }
+
+.socials > .social:nth-child(8) {
+  background-position: -210px 0; }
+
+.contact-info .contact {
+  padding-left: 0; }
+  .contact-info .contact li {
+    padding-left: 40px; }
+  .contact-info .contact .address {
+    background: url("../images/adress.png") 0 30% no-repeat; }
+  .contact-info .contact .phone {
+    background: url("../images/phone.png") 0 30% no-repeat; }
+  .contact-info .contact .email {
+    background: url("../images/email.png") 0 30% no-repeat;
+    margin-bottom: 40px; }
+.contact-info input, .contact-info input:focus {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ffea00;
+  border-radius: 0; }
+.contact-info .submit-btn {
+  width: 28px;
+  height: 28px;
+  background: url("../images/email-icon.png") no-repeat;
+  border: none;
+  transform: translateY(14px); }
+
+.footer-nav > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .footer-nav {
-  background-color: #000; }
+  background-color: #000;
+  padding: 22px 0; }
+  .footer-nav p {
+    margin-bottom: 0;
+    font-size: 14px; }
+  .footer-nav .nav-pills .nav-link.active {
+    color: #cacaca;
+    background-color: transparent; }
+  .footer-nav .nav-pills .nav-link {
+    border-radius: 0; }
+  .footer-nav .nav-link {
+    display: block;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 28px; }
+    .footer-nav .nav-link:hover {
+      color: #cacaca; }
 
 body {
   background-color: #f6f6f6; }
@@ -161,11 +259,9 @@ body {
     margin: 0 40px;
     background-color: transparent; }
     .section-header .space h4 {
-      font-size: 18px;
       text-transform: uppercase;
       color: #ffea00;
       background-color: #414146;
-      line-height: 21px;
       width: 168px;
       height: 31px;
       padding: 8px 28px; }
@@ -176,6 +272,10 @@ body {
     background-color: #cacaca;
     margin-top: 15px; }
 
+h4 {
+  font-size: 18px;
+  line-height: 21px; }
+
 p {
   font-family: "CenturyGothic", sans-serif; }
 
@@ -185,9 +285,15 @@ p {
 .white-text {
   color: #fff; }
 
+.yellow-text {
+  color: #ffea00; }
+
 .small-text {
   font-size: 13px;
   line-height: 19px; }
+
+.smaller-text {
+  font-size: 8px; }
 
 .medium-text {
   font-size: 16px;
@@ -196,6 +302,9 @@ p {
 .big-text {
   font-size: 24px;
   line-height: 33px; }
+
+li {
+  list-style: none; }
 
 .about-us {
   text-align: center; }
@@ -210,7 +319,6 @@ p {
 .about-us-list {
   width: 100%; }
   .about-us-list li {
-    list-style: none;
     height: 270px;
     width: 20%;
     display: inline-block;

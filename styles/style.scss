@@ -65,17 +65,14 @@ body {
     background-color: transparent;
 
     h4 {
-      font-size: 18px;
       text-transform: uppercase;
       color: $yellow-color;
       background-color: $grey-color;
-      line-height: 21px;
       width: 168px;
       height: 31px;
       padding: 8px 28px;
     }
   }
-
 
   &:before, &:after  {
     content: '';
@@ -86,7 +83,12 @@ body {
   }
 }
 
-p {
+h4 {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+  p {
   font-family: $font-main;
 }
 
@@ -96,9 +98,15 @@ p {
 .white-text {
   color: #fff;
 }
+.yellow-text {
+  color: $yellow-color;
+}
 .small-text {
   font-size: 13px;
   line-height: 19px;
+}
+.smaller-text {
+  font-size: 8px;
 }
 .medium-text {
   font-size: 16px;
@@ -108,7 +116,9 @@ p {
   font-size: 24px;
   line-height: 33px;
 }
-
+li {
+  list-style: none;
+}
 
 .about-us {
   text-align: center;
@@ -127,7 +137,6 @@ p {
   width: 100%;
 
   li {
-    list-style: none;
     height: 270px;
     width: 20%;
     display: inline-block;

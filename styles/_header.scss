@@ -11,21 +11,25 @@
   align-items: center;
 }
 
-.nav-pills .nav-link.active {
-  color: $grey-color;
-  background-color: $yellow-color;
-}
-.nav-pills .nav-link {
-  border-radius: 0;
-}
-.nav-link {
-  display: block;
-  padding: 1.5em .7em;
-  color: $grey-color;
-  font-size: 16px;
-  margin-left: 28px;
+.main-header {
+  .nav-pills .nav-link.active {
+    color: $grey-color;
+    background-color: $yellow-color;
+  }
 
-  &:hover {
-    color: $light-grey-color
+  .nav-pills .nav-link {
+    border-radius: 0;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 1.5em .7em;
+    color: $grey-color;
+    font-size: 16px;
+    margin-left: 28px;
+
+    &:hover {
+      color: $light-grey-color
+    }
   }
 }
