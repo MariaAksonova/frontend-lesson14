@@ -1,0 +1,35 @@
+@import "variables";
+
+.about-us {
+  text-align: center;
+
+  h3 {
+    font-family: "CenturyGothic", sans-serif;
+    font-size: 35px;
+    line-height: 21px;
+    color: $grey-color;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+  }
+}
+
+.about-us-list {
+  width: 100%;
+
+  li {
+    height: 270px;
+    width: 20%;
+    display: inline-block;
+    margin: 24px;
+
+    .yellow-section {
+      height: 66%;
+      background-color: $yellow-color;
+    }
+
+    .gray-section {
+      height: 34%;
+      background-color: $grey-color;
+    }
+  }
+}

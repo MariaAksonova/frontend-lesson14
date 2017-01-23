@@ -20,9 +20,6 @@
 .carousel-indicators .active {
   background-color: #ffea00; }
 
-@font-face {
-  font-family: "CenturyGothic";
-  src: url("../fonts/Century-Gothic.ttf") format("truetype"); }
 .btn {
   color: #fff;
   padding: 6px 26px;
@@ -79,9 +76,6 @@
   .main-header .nav-link:hover {
     color: #cacaca; }
 
-@font-face {
-  font-family: "CenturyGothic";
-  src: url("../fonts/Century-Gothic.ttf") format("truetype"); }
 .welcome {
   background: url("../images/slider-bg.png") no-repeat;
   padding: 40px 0; }
@@ -89,9 +83,81 @@
     max-width: 365px;
     background-color: #414146; }
 
-@font-face {
-  font-family: "CenturyGothic";
-  src: url("../fonts/Century-Gothic.ttf") format("truetype"); }
+.about-us {
+  text-align: center; }
+  .about-us h3 {
+    font-family: "CenturyGothic", sans-serif;
+    font-size: 35px;
+    line-height: 21px;
+    color: #414146;
+    text-transform: uppercase;
+    margin-bottom: 26px; }
+
+.about-us-list {
+  width: 100%; }
+  .about-us-list li {
+    height: 270px;
+    width: 20%;
+    display: inline-block;
+    margin: 24px; }
+    .about-us-list li .yellow-section {
+      height: 66%;
+      background-color: #ffea00; }
+    .about-us-list li .gray-section {
+      height: 34%;
+      background-color: #414146; }
+
+.our-work {
+  padding-bottom: 80px; }
+  .our-work p {
+    margin-bottom: 20px; }
+
+.grid-item {
+  width: 260px;
+  border: 2px solid transparent; }
+
+.grid-item--width2 {
+  width: 520px; }
+
+.wrapper {
+  margin: 0 auto; }
+
+.clients {
+  margin: 0 auto;
+  list-style: none; }
+  .clients .client {
+    display: inline-block;
+    margin-right: 12px;
+    height: 65px;
+    width: 140px;
+    background: url("../images/clients.png") no-repeat; }
+    .clients .client:last-child {
+      margin-right: 0; }
+
+.clients > .client:nth-child(1) {
+  background-position: 0px 0; }
+
+.clients > .client:nth-child(2) {
+  background-position: -140px 0; }
+
+.clients > .client:nth-child(3) {
+  background-position: -280px 0; }
+
+.clients > .client:nth-child(4) {
+  background-position: -420px 0; }
+
+.clients > .client:nth-child(5) {
+  background-position: -560px 0; }
+
+.clients > .client:nth-child(6) {
+  background-position: -700px 0; }
+
+.clients > .client:nth-child(7) {
+  background-position: -840px 0; }
+
+.clients > .client:nth-child(8) {
+  background-position: -980px 0; }
+
 .main-footer {
   background-color: #414146;
   color: #fff;
@@ -203,52 +269,6 @@
 body {
   background-color: #f6f6f6; }
 
-.grid-item {
-  width: 260px;
-  border: 2px solid transparent; }
-
-.grid-item--width2 {
-  width: 520px; }
-
-.wrapper {
-  margin: 0 auto; }
-
-.clients {
-  margin: 0 auto;
-  list-style: none; }
-  .clients .client {
-    display: inline-block;
-    margin-right: 12px;
-    height: 65px;
-    width: 140px;
-    background: url("../images/clients.png") no-repeat; }
-    .clients .client:last-child {
-      margin-right: 0; }
-
-.clients > .client:nth-child(1) {
-  background-position: 0px 0; }
-
-.clients > .client:nth-child(2) {
-  background-position: -140px 0; }
-
-.clients > .client:nth-child(3) {
-  background-position: -280px 0; }
-
-.clients > .client:nth-child(4) {
-  background-position: -420px 0; }
-
-.clients > .client:nth-child(5) {
-  background-position: -560px 0; }
-
-.clients > .client:nth-child(6) {
-  background-position: -700px 0; }
-
-.clients > .client:nth-child(7) {
-  background-position: -840px 0; }
-
-.clients > .client:nth-child(8) {
-  background-position: -980px 0; }
-
 .section-header {
   display: flex;
   justify-content: center;
@@ -264,7 +284,7 @@ body {
       background-color: #414146;
       width: 168px;
       height: 31px;
-      padding: 8px 28px; }
+      padding: 6px 28px; }
   .section-header:before, .section-header:after {
     content: '';
     height: 1px;
@@ -305,29 +325,5 @@ p {
 
 li {
   list-style: none; }
-
-.about-us {
-  text-align: center; }
-  .about-us h3 {
-    font-family: "CenturyGothic", sans-serif;
-    font-size: 35px;
-    line-height: 21px;
-    color: #414146;
-    text-transform: uppercase;
-    margin-bottom: 26px; }
-
-.about-us-list {
-  width: 100%; }
-  .about-us-list li {
-    height: 270px;
-    width: 20%;
-    display: inline-block;
-    margin: 24px; }
-    .about-us-list li .yellow-section {
-      height: 66%;
-      background-color: #ffea00; }
-    .about-us-list li .gray-section {
-      height: 34%;
-      background-color: #414146; }
 
 /*# sourceMappingURL=style.css.map */
