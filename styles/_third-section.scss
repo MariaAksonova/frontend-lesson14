@@ -20,3 +20,9 @@
 .wrapper {
   margin: 0 auto;
 }
+
+@media (max-width: 575px) {
+  .grid-item--width2 {
+    width: 260px;
+  }
+}

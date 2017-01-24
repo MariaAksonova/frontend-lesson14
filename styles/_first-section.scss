@@ -3,6 +3,7 @@
 .welcome {
   background: url("../images/slider-bg.png") no-repeat;
   padding: 40px 0;
+  background-size: cover;
 
   >.container {
     width: 1140px;
@@ -49,4 +50,20 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .welcome {
+    height: 1050px;
+
+    >.container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn {
+      margin: 50px 0;
+    }
+  }
+}
 

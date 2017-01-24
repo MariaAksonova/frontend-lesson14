@@ -96,6 +96,12 @@
     border: none;
     border-bottom: 2px solid $yellow-color;
     border-radius: 0;
+    color: #fff;
+    transition: .3s;
+  }
+
+  input:focus {
+    background-color: rgb(153,153,0);
   }
 
   .submit-btn {
@@ -141,5 +147,14 @@
     &:hover {
       color: $light-grey-color
     }
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-nav>.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
