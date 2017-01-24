@@ -79,12 +79,38 @@
 .welcome {
   background: url("../images/slider-bg.png") no-repeat;
   padding: 40px 0; }
+  .welcome > .container {
+    width: 1140px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .welcome .carousel-item img {
+    margin: 0;
+    width: 640px;
+    height: 543px; }
   .welcome p {
-    max-width: 365px;
-    background-color: #414146; }
+    max-width: 365px; }
+    .welcome p span {
+      box-shadow: 0.2em 0 0 #414146, -0.2em 0 0 #414146;
+      background-color: #414146; }
+  .welcome h2 {
+    font-size: 66px;
+    text-transform: uppercase;
+    line-height: 83px;
+    font-family: "CenturyGothic", sans-serif; }
+    .welcome h2 span {
+      box-shadow: 0.2em 0 0 #ffea00, -0.2em 0 0 #ffea00;
+      background-color: #ffea00; }
+  .welcome header {
+    max-width: 564px; }
+  .welcome .btn {
+    float: right;
+    margin-top: 100px; }
 
 .about-us {
-  text-align: center; }
+  text-align: center;
+  padding-top: 84px; }
   .about-us h3 {
     font-family: "CenturyGothic", sans-serif;
     font-size: 35px;
@@ -95,6 +121,7 @@
 
 .about-us-list {
   width: 100%;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
@@ -272,7 +299,8 @@
 .contact-info .contact {
   padding-left: 0; }
   .contact-info .contact li {
-    padding-left: 40px; }
+    padding-left: 40px;
+    min-height: 30px; }
   .contact-info .contact .address {
     background: url("../images/adress.png") 0 30% no-repeat; }
   .contact-info .contact .phone {
