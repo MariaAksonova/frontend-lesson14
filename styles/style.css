@@ -94,18 +94,69 @@
     margin-bottom: 26px; }
 
 .about-us-list {
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
   .about-us-list li {
-    height: 270px;
-    width: 20%;
+    height: 285px;
+    width: 250px;
     display: inline-block;
-    margin: 24px; }
+    margin-bottom: 80px; }
+    .about-us-list li:hover .yellow-section {
+      background: url("../images/bog-post-img.png") no-repeat; }
+      .about-us-list li:hover .yellow-section h5 {
+        display: none; }
+    .about-us-list li:hover .gray-section {
+      flex-direction: column;
+      justify-content: space-around; }
+      .about-us-list li:hover .gray-section > p {
+        display: none; }
+      .about-us-list li:hover .gray-section div {
+        display: block;
+        width: 209px; }
+      .about-us-list li:hover .gray-section h5 {
+        color: #fff; }
+      .about-us-list li:hover .gray-section:before {
+        display: block; }
     .about-us-list li .yellow-section {
       height: 66%;
-      background-color: #ffea00; }
+      transition: .5s; }
+      .about-us-list li .yellow-section h5 {
+        padding-top: 156px; }
     .about-us-list li .gray-section {
       height: 34%;
-      background-color: #414146; }
+      background-color: #414146;
+      display: flex;
+      align-items: center;
+      position: relative;
+      transition: .5s; }
+      .about-us-list li .gray-section:before {
+        content: '';
+        background: url("../images/corner.png") no-repeat;
+        position: absolute;
+        left: 80%;
+        top: -11px;
+        height: 22px;
+        width: 22px;
+        display: none; }
+      .about-us-list li .gray-section .about-us-hov {
+        display: none; }
+  .about-us-list h5 {
+    font-size: 20px;
+    text-transform: uppercase; }
+  .about-us-list .redesigning {
+    background: url("../images/web-design-icon.png") 50% 20% no-repeat;
+    background-color: #ffea00; }
+  .about-us-list .web-development {
+    background: url("../images/web-development.png") 50% 20% no-repeat;
+    background-color: #ffea00; }
+  .about-us-list .web-design {
+    background: url("../images/web-design-icon.png") 50% 20% no-repeat;
+    background-color: #ffea00; }
+  .about-us-list .graphic-design {
+    background: url("../images/graphic-design-icon.png") 50% 20% no-repeat;
+    background-color: #ffea00; }
 
 .our-work {
   padding-bottom: 80px; }
