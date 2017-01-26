@@ -98,7 +98,7 @@
   .welcome .carousel-item img {
     margin: 0;
     width: 640px;
-    height: auto; }
+    height: 550px; }
   .welcome p {
     max-width: 365px; }
     .welcome p span {
@@ -108,15 +108,18 @@
     font-size: 66px;
     text-transform: uppercase;
     line-height: 83px;
-    font-family: "CenturyGothic", sans-serif; }
+    font-family: "CenturyGothic", sans-serif;
+    margin-top: -6px; }
     .welcome h2 span {
       box-shadow: 0.2em 0 0 #ffea00, -0.2em 0 0 #ffea00;
       background-color: #ffea00; }
   .welcome header {
-    max-width: 564px; }
+    max-width: 564px;
+    margin-right: -100px;
+    z-index: 100; }
   .welcome .btn {
-    float: right;
-    margin-top: 100px; }
+    margin-top: 50px;
+    margin-left: 250px; }
 
 @media (max-width: 1199px) {
   .welcome {
@@ -127,7 +130,9 @@
       justify-content: space-between;
       align-items: center; }
     .welcome .btn {
-      margin: 50px 0; } }
+      margin: 50px 0; }
+    .welcome header {
+      margin-right: 0; } }
 @media (max-width: 700px) {
   .welcome {
     height: 1070px; }
@@ -139,11 +144,11 @@
       margin-right: 70%; } }
 @media (max-width: 530px) {
   .welcome {
-    height: 950px; }
+    height: 900px; }
     .welcome .carousel-item img {
       margin: 0;
       width: 342px;
-      height: 330px; }
+      height: 310px; }
     .welcome .carousel-indicators {
       margin-right: 70%; }
     .welcome h2 {
@@ -255,6 +260,7 @@
 .clients {
   list-style: none;
   padding-bottom: 40px;
+  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }

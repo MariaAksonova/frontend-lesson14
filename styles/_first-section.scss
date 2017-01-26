@@ -16,7 +16,7 @@
   .carousel-item img {
     margin: 0;
     width: 640px;
-    height: auto;
+    height: 550px;
   }
 
   p {
@@ -33,6 +33,7 @@
     text-transform: uppercase;
     line-height: 83px;
     font-family: $font-main;
+    margin-top: -6px;
 
     span {
       box-shadow: 0.2em 0 0 $yellow-color, -0.2em 0 0 $yellow-color;
@@ -42,11 +43,13 @@
 
   header {
     max-width: 564px;
+    margin-right: -100px;
+    z-index: 100;
   }
 
   .btn {
-    float: right;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-left: 250px;
   }
 }
 
@@ -63,6 +66,10 @@
 
     .btn {
       margin: 50px 0;
+    }
+
+    header {
+      margin-right: 0;
     }
   }
 }
@@ -85,7 +92,7 @@
 
 @media (max-width: 530px) {
   .welcome {
-    height: 950px;
+    height: 900px;
 
     .carousel-item img {
       margin: 0;
