@@ -7,7 +7,7 @@
   h3 {
     font-family: "CenturyGothic", sans-serif;
     font-size: 35px;
-    line-height: 21px;
+    line-height: 30px;
     color: $grey-color;
     text-transform: uppercase;
     margin-bottom: 26px;
@@ -114,5 +114,12 @@
   .graphic-design {
     background: url("../images/graphic-design-icon.png") 50% 20% no-repeat;
     background-color: $yellow-color;
+  }
+}
+
+
+@media (max-width: 546px) {
+  .about-us-list {
+    justify-content: center;
   }
 }

@@ -16,7 +16,7 @@
   .carousel-item img {
     margin: 0;
     width: 640px;
-    height: 543px;
+    height: auto;
   }
 
   p {
@@ -52,7 +52,7 @@
 
 @media (max-width: 1199px) {
   .welcome {
-    height: 1050px;
+    height: 1110px;
 
     >.container {
       display: flex;
@@ -67,3 +67,34 @@
   }
 }
 
+@media (max-width: 700px) {
+  .welcome {
+    height: 1070px;
+
+    .carousel-item img {
+      margin: 0;
+      width: 500px;
+      height: 470px;;
+    }
+
+    .carousel-indicators {
+      margin-right: 70%;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .welcome {
+    height: 950px;
+
+    .carousel-item img {
+      margin: 0;
+      width: 350px;
+      height: 330px;
+    }
+
+    .carousel-indicators {
+      margin-right: 70%;
+    }
+  }
+}

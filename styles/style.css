@@ -76,12 +76,15 @@
   .main-header .nav-link:hover {
     color: #cacaca; }
 
-@media (max-width: 575px) {
+@media (max-width: 738px) {
   .main-header > .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+
+  .main-header .nav-link {
+    margin-left: 18px; } }
 .welcome {
   background: url("../images/slider-bg.png") no-repeat;
   padding: 40px 0;
@@ -95,7 +98,7 @@
   .welcome .carousel-item img {
     margin: 0;
     width: 640px;
-    height: 543px; }
+    height: auto; }
   .welcome p {
     max-width: 365px; }
     .welcome p span {
@@ -117,21 +120,39 @@
 
 @media (max-width: 1199px) {
   .welcome {
-    height: 1050px; }
+    height: 1110px; }
     .welcome > .container {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center; }
     .welcome .btn {
-      margin: 50px; } }
+      margin: 50px 0; } }
+@media (max-width: 700px) {
+  .welcome {
+    height: 1070px; }
+    .welcome .carousel-item img {
+      margin: 0;
+      width: 500px;
+      height: 470px; }
+    .welcome .carousel-indicators {
+      margin-right: 70%; } }
+@media (max-width: 530px) {
+  .welcome {
+    height: 950px; }
+    .welcome .carousel-item img {
+      margin: 0;
+      width: 350px;
+      height: 330px; }
+    .welcome .carousel-indicators {
+      margin-right: 70%; } }
 .about-us {
   text-align: center;
   padding-top: 84px; }
   .about-us h3 {
     font-family: "CenturyGothic", sans-serif;
     font-size: 35px;
-    line-height: 21px;
+    line-height: 30px;
     color: #414146;
     text-transform: uppercase;
     margin-bottom: 26px; }
@@ -202,6 +223,9 @@
     background: url("../images/graphic-design-icon.png") 50% 20% no-repeat;
     background-color: #ffea00; }
 
+@media (max-width: 546px) {
+  .about-us-list {
+    justify-content: center; } }
 .our-work {
   padding-bottom: 80px; }
   .our-work p {
@@ -372,7 +396,7 @@
     .footer-nav .nav-link:hover {
       color: #cacaca; }
 
-@media (max-width: 575px) {
+@media (max-width: 738px) {
   .footer-nav > .container {
     display: flex;
     flex-direction: column;
