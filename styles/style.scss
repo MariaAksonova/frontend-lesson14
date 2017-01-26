@@ -51,7 +51,7 @@ h4 {
   line-height: 21px;
 }
 
-  p {
+p {
   font-family: $font-main;
 }
 
@@ -90,3 +90,14 @@ li {
   list-style: none;
 }
 
+@media (max-width: 495px) {
+  .nav {
+    flex-direction: column;
+    margin-top: 14px;
+    align-items: center;
+  }
+
+  .main-header .nav-link {
+    margin-left: 0;
+  }
+}

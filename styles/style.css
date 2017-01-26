@@ -142,17 +142,25 @@
     height: 950px; }
     .welcome .carousel-item img {
       margin: 0;
-      width: 350px;
+      width: 342px;
       height: 330px; }
     .welcome .carousel-indicators {
-      margin-right: 70%; } }
+      margin-right: 70%; }
+    .welcome h2 {
+      font-size: 54px;
+      line-height: 70px; } }
+@media (max-width: 390px) {
+  .welcome {
+    height: 920px; }
+    .welcome .carousel-indicators {
+      margin-right: 52%; } }
 .about-us {
   text-align: center;
   padding-top: 84px; }
   .about-us h3 {
     font-family: "CenturyGothic", sans-serif;
     font-size: 35px;
-    line-height: 30px;
+    line-height: 36px;
     color: #414146;
     text-transform: uppercase;
     margin-bottom: 26px; }
@@ -461,5 +469,14 @@ p {
 
 li {
   list-style: none; }
+
+@media (max-width: 495px) {
+  .nav {
+    flex-direction: column;
+    margin-top: 14px;
+    align-items: center; }
+
+  .main-header .nav-link {
+    margin-left: 0; } }
 
 /*# sourceMappingURL=style.css.map */

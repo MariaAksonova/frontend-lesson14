@@ -89,12 +89,27 @@
 
     .carousel-item img {
       margin: 0;
-      width: 350px;
-      height: 330px;
+      width: 342px;
+      height: 310px;
     }
 
     .carousel-indicators {
       margin-right: 70%;
+    }
+
+    h2 {
+      font-size: 54px;
+      line-height: 70px;
+    }
+  }
+}
+
+@media (max-width: 390px){
+  .welcome {
+    height: 920px;
+
+    .carousel-indicators {
+      margin-right: 52%;
     }
   }
 }
